@@ -8,12 +8,63 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var currentValue = 50.0
+    private let range: ClosedRange<Double> = 0...200
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 40) {
+            Slider(value: $currentValue, in: range)
+               
+            Gauge(value: currentValue, in: range) {
+                Label("Speed", systemImage: "speedometer")
+                    .font(.system(size: 16))
+            } currentValueLabel: {
+                Text("\(Int(currentValue)) km/h")
+            } minimumValueLabel: {
+                Text(range.lowerBound.formatted(.number))
+            } maximumValueLabel: {
+                Text(range.upperBound.formatted(.number))
+            }
+            .tint(.red)
+            .gaugeStyle(.linearCapacity) //Default value is .linearCapacity
+            
+            Gauge(value: currentValue, in: range) {
+                Label("Speed", systemImage: "speedometer")
+                    .font(.system(size: 16))
+            } currentValueLabel: {
+                Text("\(Int(currentValue)) km/h")
+            }
+            .tint(.green)
+            .gaugeStyle(.accessoryCircular)
+            
+            Gauge(value: currentValue, in: range) {
+                Label("Speed", systemImage: "speedometer")
+                    .font(.system(size: 16))
+            } currentValueLabel: {
+                Text("\(Int(currentValue)) km/h")
+            }
+            .tint(.blue)
+            .gaugeStyle(.accessoryCircularCapacity)
+            
+            Gauge(value: currentValue, in: range) {
+                Label("Speed", systemImage: "speedometer")
+                    .font(.system(size: 16))
+            } currentValueLabel: {
+                Text("\(Int(currentValue)) km/h")
+            }
+            .tint(.cyan)
+            .gaugeStyle(.accessoryLinear)
+            
+            Gauge(value: currentValue, in: range) {
+                Label("Speed", systemImage: "speedometer")
+                    .font(.system(size: 16))
+            } currentValueLabel: {
+                Text("\(Int(currentValue)) km/h")
+            }
+            .tint(.indigo)
+            .gaugeStyle(.accessoryLinearCapacity)
+            
+
         }
         .padding()
     }

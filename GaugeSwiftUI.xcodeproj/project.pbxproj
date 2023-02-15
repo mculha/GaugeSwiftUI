@@ -11,6 +11,8 @@
 		E92DCCC2299B303300567020 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DCCC1299B303300567020 /* ContentView.swift */; };
 		E92DCCC4299B303400567020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92DCCC3299B303400567020 /* Assets.xcassets */; };
 		E92DCCC7299B303400567020 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92DCCC6299B303400567020 /* Preview Assets.xcassets */; };
+		E92DCCCE299C894900567020 /* SpeedometerSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DCCCD299C894900567020 /* SpeedometerSyle.swift */; };
+		E92DCCD0299C8F2B00567020 /* SpeedometerGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DCCCF299C8F2B00567020 /* SpeedometerGauge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E92DCCC1299B303300567020 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E92DCCC3299B303400567020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E92DCCC6299B303400567020 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E92DCCCD299C894900567020 /* SpeedometerSyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerSyle.swift; sourceTree = "<group>"; };
+		E92DCCCF299C8F2B00567020 /* SpeedometerGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerGauge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				E92DCCC1299B303300567020 /* ContentView.swift */,
 				E92DCCC3299B303400567020 /* Assets.xcassets */,
 				E92DCCC5299B303400567020 /* Preview Content */,
+				E92DCCCD299C894900567020 /* SpeedometerSyle.swift */,
+				E92DCCCF299C8F2B00567020 /* SpeedometerGauge.swift */,
 			);
 			path = GaugeSwiftUI;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92DCCCE299C894900567020 /* SpeedometerSyle.swift in Sources */,
 				E92DCCC2299B303300567020 /* ContentView.swift in Sources */,
 				E92DCCC0299B303300567020 /* GaugeSwiftUIApp.swift in Sources */,
+				E92DCCD0299C8F2B00567020 /* SpeedometerGauge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

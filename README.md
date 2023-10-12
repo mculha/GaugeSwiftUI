@@ -4,10 +4,10 @@ Apple introduced a new view which is called Gauge to display progress.
 
 
 Apple Official documentation says:
-A gauge is a view that shows a current level of a value in relation to a specified finite capacity, very much like a fuel gauge in an automobile. Gauge displays are configurable; they can show any combination of the gauge’s current value, the range the gauge can display, and a label describing the purpose of the gauge itself.
+A gauge is a view that shows a current level of value in relation to a specified finite capacity, very much like a fuel gauge in an automobile. Gauge displays are configurable; they can show any combination of the gauge’s current value, the range the gauge can display, and a label describing the purpose of the gauge itself.
 
-Here is the link: 
-https://developer.apple.com/documentation/swiftui/gauge
+Here is the [**link**](https://developer.apple.com/documentation/swiftui/gauge): 
+
 
 
 
